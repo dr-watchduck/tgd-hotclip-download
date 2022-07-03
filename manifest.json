@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "tgd-hotclip-download",
+  "version": "1.0.0",
+  "description": "트게더 핫클립 동영상 raw url 표기",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://tgd.kr/*/*"],
+      "js": ["index.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
